@@ -1,0 +1,94 @@
+.header-sec {
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 56px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        color: $titlecolor;
+        position: relative;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-gradient(linear, right top, left top, from($maincolor), color-stop(50%, $maincolor), color-stop(50%, $titlecolor));
+        background-image: linear-gradient(to left, $maincolor, $maincolor 50%, $titlecolor 50%);
+        background-size: 200% 100%;
+        background-position: 0%;
+
+        @include transition(all 0.5s ease-in-out);
+
+        &:hover {
+            @include transition(all 0.5s ease-in-out);
+            background-position: 100%;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .nav-list {
+            padding: 0 20px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .nav-list {
+            padding: 0 0;
+        }
+    }
+}
+
+.nav {
+    @media (max-width: 992px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background: rgba($titlecolor, 0.988);
+        transition: all 500ms ease-in-out;
+        clip-path: circle(30px at 33px 33px);
+        -webkit-clip-path: circle(30px at 33px 33px);
+        -moz-clip-path: circle(30px at 33px 33px);
+        -o-clip-path: circle(30px at 33px 33px);
+        z-index: 999;
+        visibility: hidden;
+
+
+        .nav-list {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 95px;
+            padding: 0 0;
+        }
+
+        .nav-li {
+            margin: 9px 0;
+        }
+
+        .nav-link {
+            font-size: 20px;
+            font-family: 'itc-md';
+            color: #fff;
+            background-image: none;
+            background-image: none;
+            -webkit-text-fill-color: #fff;
+        }
+    }
+}
+
+.clip-fix {
+    @media (max-width: 992px) {
+        clip-path: circle(30px at 37px 34px);
+        -webkit-clip-path: circle(30px at 37px 34px);
+        -moz-clip-path: circle(30px at 37px 34px);
+        -o-clip-path: circle(30px at 37px 34px);
+    }
+}

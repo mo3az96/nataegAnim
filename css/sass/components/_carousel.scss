@@ -1,0 +1,55 @@
+.owl-carousel {
+    margin-top: 30px;
+
+    .owl-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 94px;
+
+        img {
+            display: block;
+            width: auto;
+            margin: auto;
+        }
+    }
+}
+
+.clients-cont {
+    .owl-item {
+        width: 147px;
+        height: 147px;
+    }
+}
+
+.owl-dots {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+
+    .owl-dot {
+        outline: none;
+        box-shadow: none;
+        border: none;
+
+        span {
+            display: block;
+            margin: 0 4px;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background: #e9e9e9;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                background: #1580f1;
+            }
+        }
+
+        &.active {
+            span {
+                background: #1580f1;
+            }
+        }
+    }
+}
