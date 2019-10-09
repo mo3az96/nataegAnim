@@ -1807,6 +1807,12 @@ input[type=number]::-webkit-inner-spin-button {
 .feature .feature-img {
   position: relative;
 }
+@media (max-width: 992px) {
+  .feature .feature-img {
+    width: 135px;
+    margin: auto;
+  }
+}
 .feature .feature-img .hand1 {
   right: 65px;
   top: 18px;
@@ -1815,7 +1821,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 992px) {
   .feature .feature-img .hand1 {
-    right: 116px;
+    right: 24px;
   }
 }
 .feature .feature-img .hand2 {
@@ -1826,7 +1832,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 992px) {
   .feature .feature-img .hand2 {
-    right: 130px;
+    right: 38px;
   }
 }
 .feature .feature-img .hand4 {
@@ -1837,7 +1843,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 992px) {
   .feature .feature-img .hand4 {
-    right: 140px;
+    right: 49px;
   }
 }
 .feature .feature-img .hand5 {
@@ -1848,12 +1854,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 992px) {
   .feature .feature-img .hand5 {
-    right: 160px;
+    right: 69px;
   }
 }
 
 .step-desc .step-img {
   position: relative;
+  width: 174px;
 }
 .step-desc .step-img .add1 {
   position: absolute;
@@ -1863,7 +1870,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 992px) {
   .step-desc .step-img .add1 {
-    right: 140px;
+    right: 63px;
   }
 }
 .step-desc .step-img .add2 {

@@ -342,6 +342,13 @@
     .feature-img {
         position: relative;
 
+        @media (max-width: 992px) {
+            width: 135px;
+            margin: auto;
+        }
+
+
+
         .hand1 {
             right: 65px;
             top: 18px;
@@ -349,7 +356,7 @@
             animation: hand1 2s infinite forwards;
 
             @media (max-width: 992px) {
-                right: 116px;
+                right: 24px;
             }
         }
 
@@ -360,7 +367,8 @@
             animation: hand1 2s infinite forwards;
 
             @media (max-width: 992px) {
-                right: 130px;
+                right: 38px;
+
 
             }
         }
@@ -372,7 +380,7 @@
             animation: hand4 1s infinite alternate;
 
             @media (max-width: 992px) {
-                right: 140px;
+                right: 49px;
 
             }
         }
@@ -384,7 +392,7 @@
             animation: hand5 3s 1s infinite forwards;
 
             @media (max-width: 992px) {
-                right: 160px;
+                right: 69px;
 
             }
         }
@@ -395,6 +403,7 @@
 .step-desc {
     .step-img {
         position: relative;
+        width: 174px;
 
         .add1 {
             position: absolute;
@@ -403,7 +412,7 @@
             animation: add1 2s infinite alternate;
 
             @media (max-width: 992px) {
-                right: 140px;
+                right: 63px;
 
             }
         }
