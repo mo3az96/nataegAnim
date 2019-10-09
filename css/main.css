@@ -1172,7 +1172,8 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .stages-sec .stgaes-img {
     order: 2;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    margin-top: 55px;
   }
   .stages-sec .stages-cont {
     margin-top: 25px;
@@ -1768,11 +1769,23 @@ input[type=number]::-webkit-inner-spin-button {
 .main-img {
   position: relative;
 }
+@media (max-width: 992px) {
+  .main-img .main-img-img {
+    width: 80%;
+  }
+}
 .main-img .sign {
   position: absolute;
   top: 100px;
   left: -53px;
   animation: sign 5s infinite forwards;
+}
+@media (max-width: 992px) {
+  .main-img .sign {
+    width: 12%;
+    top: 52px;
+    left: -9px;
+  }
 }
 .main-img .main-arrow {
   background-image: url("../images/main-arrow.png");
@@ -1785,6 +1798,11 @@ input[type=number]::-webkit-inner-spin-button {
   width: 294px;
   height: 231px;
 }
+@media (max-width: 992px) {
+  .main-img .main-arrow {
+    display: none;
+  }
+}
 
 .feature .feature-img {
   position: relative;
@@ -1795,11 +1813,21 @@ input[type=number]::-webkit-inner-spin-button {
   position: absolute;
   animation: hand1 2s infinite forwards;
 }
+@media (max-width: 992px) {
+  .feature .feature-img .hand1 {
+    right: 116px;
+  }
+}
 .feature .feature-img .hand2 {
   right: 80px;
   top: 13px;
   position: absolute;
   animation: hand1 2s infinite forwards;
+}
+@media (max-width: 992px) {
+  .feature .feature-img .hand2 {
+    right: 130px;
+  }
 }
 .feature .feature-img .hand4 {
   right: 90px;
@@ -1807,11 +1835,21 @@ input[type=number]::-webkit-inner-spin-button {
   position: absolute;
   animation: hand4 1s infinite alternate;
 }
+@media (max-width: 992px) {
+  .feature .feature-img .hand4 {
+    right: 140px;
+  }
+}
 .feature .feature-img .hand5 {
   right: 111px;
   top: 47px;
   position: absolute;
   animation: hand5 3s 1s infinite forwards;
+}
+@media (max-width: 992px) {
+  .feature .feature-img .hand5 {
+    right: 160px;
+  }
 }
 
 .step-desc .step-img {
@@ -1822,6 +1860,11 @@ input[type=number]::-webkit-inner-spin-button {
   right: 87px;
   top: 62px;
   animation: add1 2s infinite alternate;
+}
+@media (max-width: 992px) {
+  .step-desc .step-img .add1 {
+    right: 140px;
+  }
 }
 .step-desc .step-img .add2 {
   overflow: hidden;
@@ -1845,16 +1888,34 @@ input[type=number]::-webkit-inner-spin-button {
   height: 307px;
   position: relative;
 }
+@media (max-width: 992px) {
+  .type-img-white {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
 
 .kindadd1 {
   position: absolute;
   left: 55px;
+}
+@media (max-width: 992px) {
+  .kindadd1 {
+    left: -10px;
+    top: -35px;
+  }
 }
 
 .kindadd2 {
   position: absolute;
   left: 55px;
   top: 30px;
+}
+@media (max-width: 992px) {
+  .kindadd2 {
+    left: 0;
+  }
 }
 
 .kind1 {
@@ -1868,12 +1929,24 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   padding-top: 55px;
 }
+@media (max-width: 992px) {
+  .type-img-grey {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
 
 .kindadd4 {
   position: absolute;
   left: 10px;
   top: -10px;
   animation: kind1 2s infinite alternate;
+}
+@media (max-width: 992px) {
+  .kindadd4 {
+    top: 40px;
+  }
 }
 
 .aversadd {
