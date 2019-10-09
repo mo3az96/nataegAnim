@@ -129,7 +129,7 @@
 body {
   font-family: itc;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: hidden;
 }
 body::-webkit-scrollbar {
   background-color: #eff3f5;
@@ -143,6 +143,7 @@ body::-webkit-scrollbar-thumb {
 html {
   scrollbar-width: thin;
   scrollbar-color: rgba(21, 128, 241, 0.75) #eff3f5;
+  overflow-y: hidden;
 }
 
 .container {
@@ -185,7 +186,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .overfollow-fix {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 @font-face {
@@ -1882,6 +1883,41 @@ input[type=number]::-webkit-inner-spin-button {
 
 .adver2 {
   animation: kind1 2s infinite alternate;
+}
+
+@keyframes widthfix {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.load {
+  position: fixed;
+  z-index: 999999;
+  background-image: -moz-linear-gradient(90deg, white 0%, #eff3f5 100%);
+  background-image: -webkit-linear-gradient(90deg, white 0%, #eff3f5 100%);
+  background-image: -ms-linear-gradient(90deg, white 0%, #eff3f5 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load .loader {
+  width: 316px;
+}
+.load .loader img {
+  animation: widthfix 1s infinite alternate;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,14 @@
+window.onload = function () {
+
+    $(".loader").fadeOut(1000, function () {
+        $(this).parent().hide();
+        $('body, html').css("overflow-y", "visible");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1);
+    });
+
+}
 $(document).ready(function () {
 
 

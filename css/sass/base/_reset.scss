@@ -1,7 +1,7 @@
 body {
     font-family: itc;
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: hidden;
 
     &::-webkit-scrollbar {
         background-color: #eff3f5;
@@ -17,6 +17,7 @@ body {
 html {
     scrollbar-width: thin;
     scrollbar-color: rgba(#1580f1, 0.75) #eff3f5;
+    overflow-y: hidden;
 
 }
 
@@ -64,5 +65,5 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .overfollow-fix {
-    overflow: hidden;
+    overflow-y: hidden;
 }
